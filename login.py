@@ -39,5 +39,22 @@ def menu():
             break
         else:
             print("Invalid choice. Try again.\n")
+           
+            # Simple Login Feature
+
+def login(username, password):
+    if username == "admin" and password == "admin123":
+        print("Login successful!")
+        return True
+    else:
+        print("Invalid username or password.")
+        return False
+
+
+if __name__ == "__main__":
+    user = input("Enter username: ")
+    pwd = input("Enter password: ")
+    login(user, pwd)
+
 
 menu()
